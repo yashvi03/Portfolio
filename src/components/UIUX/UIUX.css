@@ -1,0 +1,70 @@
+.ux-projects {
+  display: flex;
+  justify-content: space-around;
+  padding: 3vw;
+  gap: 2vw;
+  padding-bottom: 5vw;
+}
+
+.uxProject-1 {
+  background: linear-gradient(110deg, white 60%, blue 60%);
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  padding: 48px;
+  gap: 5vw;
+  width: 40vw;
+  height: 18vw;
+}
+
+.uxProject-2 {
+  background: linear-gradient(-90deg, white 60%, #92e3a9 40%);
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  padding: 0 48px;
+  gap: 5vw;
+  width: 40vw;
+  height: 25vw;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+}
+
+.ux-p1-heading {
+  font-size: 2vw;
+  color: #191d24;
+}
+.ux-p1-desc {
+  color: #191d24;
+  font-size: 1vw;
+}
+
+.viewProjectUX {
+  text-decoration: none;
+  color: #191d24;
+  border: 1px solid #191d24;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 1vw;
+}
+
+.passportApp-img {
+  height: 20vw;
+}
+
+.vdeliver-img {
+  height: 25vw;
+  display: flex;
+  align-self: baseline;
+}
+
+.ux-heading {
+  font-size: 48px;
+  color: white;
+  padding: 3vw 48px 1.5vw;
+}

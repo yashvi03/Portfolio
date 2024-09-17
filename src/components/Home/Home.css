@@ -1,0 +1,125 @@
+.circle {
+  border-radius: 50%;
+  background-color: #353c4890;
+  width: 50vw;
+  height: 50vw;
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  z-index: -100;
+}
+
+.circle-1 {
+  border-radius: 50%;
+  background-color: #353c4890;
+  width: 50vw;
+  height: 50vw;
+  position: absolute;
+  right: 70%;
+  top: 120%;
+  z-index: -100;
+}
+
+.text {
+  padding: 48px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 48px;
+  color: white;
+  font-size: 18px;
+}
+
+.project {
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  padding: 48px;
+  margin-bottom: 12px;
+}
+
+.solve,
+.learn {
+  background-color: #34ce84;
+  padding: 0 4px;
+  border-radius: 2px;
+  color: #191d24;
+}
+
+.name {
+  font-size: 32px;
+}
+
+.desc {
+  font-size: 32px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.edu {
+  font-size: 20px;
+  color: rgb(163, 163, 163);
+}
+
+.rectangle {
+  background-color: #7b58ed;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 32px;
+}
+
+.front-end .rectangle{
+    background-color: #F2473D;
+}
+
+.full-stack .rectangle{
+    background-color: #E8C339;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-image: linear-gradient(to bottom left, #191d24, #353c48);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.skill {
+  background-color: #353c48;
+  color: white;
+  border-radius: 24px;
+  border: 1px solid grey;
+  padding: 12px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px 0;
+  gap: 12px;
+}
+
+.heading {
+  font-size: 48px;
+  color: white;
+  
+}
+
+.section-desc {
+  font-size: 24px;
+  color: grey;
+  max-width: 600px;
+}
+
+.front-end {
+  margin-top: 12vw;
+  margin-bottom: 12vw;
+}
+

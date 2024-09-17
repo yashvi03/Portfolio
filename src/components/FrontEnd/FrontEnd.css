@@ -1,0 +1,107 @@
+.frontEnd-container {
+  display: flex;
+}
+
+.front-end-project {
+  display: flex;
+  align-items: center;
+}
+
+.project-snippet {
+  color: white;
+}
+
+.front-end-img {
+  width:30vw;
+  margin: 48px;
+  border-radius: 12px;
+}
+
+.front-end-heading {
+  font-size: 32px;
+  color: white;
+  padding: 3vw 48px 1.5vw;
+}
+
+.project-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.snippet {
+  color: rgba(255, 255, 255, 0.653);
+  padding: 8px 0;
+
+}
+
+.tech {
+  padding: 8px 0;
+}
+
+.tech span {
+  color: rgba(255, 255, 255, 0.653);
+}
+
+.highlights {
+  display: flex;
+  gap: 12px;
+  font-style: italic;
+  padding: 8px 0;
+  color: rgba(255, 255, 255, 0.653);
+
+}
+
+.view{
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: rgb(244, 135, 40);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-projects{
+  overflow-y: visible;
+}
+
+.sidebar {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  width: 250px; 
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar-item {
+  display: block;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.493);
+  text-decoration: none;
+  margin: 10px 0;
+  border-left: 3px solid transparent;
+  transition: background-color 0.3s, border-left 0.3s;
+}
+
+.sidebar-item.active {
+  background-color: #e0e0e0;
+  border-left: 3px solid rgb(244, 135, 40);; /* Highlight color */
+  font-weight: bold;
+  color: rgb(44, 41, 41);
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sidenav-heading{
+  position: fixed;
+  top: 18%;
+  right: 0;
+  width: 264px;
+  color: white;
+  font-size: 24px;
+
+}
