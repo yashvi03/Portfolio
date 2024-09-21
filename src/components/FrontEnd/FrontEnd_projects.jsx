@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 function FrontEnd_projects() {
   return (
     <div className="frontEnd-projects">
+      <div className="fe-circle"></div>
+      <div className="fe-circle-1"></div>
       <NavBar />
       <div className="frontEnd-container">
         <Sidebar />

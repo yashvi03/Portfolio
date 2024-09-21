@@ -8,22 +8,44 @@ import { Link } from "react-router-dom";
 function MemoryGame() {
   return (
     <div>
+      <div className="fe-circle"></div>
+      <div className="fe-circle-1"></div>
       <div className="back">
         <Link to="/frontEnd_projects">
           <i className="fa-solid fa-arrow-left"></i>
         </Link>
       </div>
       <div className="front-end-projects">
+        <img className="project-live-img" src={memoryGame} alt="" />
+        <div className="links">
+          <div className="project-link">
+            <i className="fa-brands fa-lg fa-github"></i>
+            <a
+              className="github"
+              href="https://github.com/yashvi03/memory-game?tab=readme-ov-file"
+            >
+              Github
+            </a>
+          </div>
+          <div className="project-link">
+            <a
+              className="live-preview"
+              href="https://ash-memorycard-game.netlify.app/"
+            >
+              Live Preview
+            </a>
+            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
         <div className="front-end-project-container">
-          <div className="project-heading">Memory Card Game</div>
+          <div className="fe-project-heading">Memory Card Game</div>
           <div className="project-desc">
             A fun memory game where players must click unique cards without
             repeating any selections.
           </div>
         </div>
-        <a href="https://ash-memorycard-game.netlify.app/">
-          <img className="project-live-img" src={memoryGame} alt="" />
-        </a>
+        <hr />
+
         <div className="front-end-project-container">
           <div className="front-end-project-heading">The Idea</div>
           <div className="front-end-project-desc">
@@ -43,40 +65,45 @@ function MemoryGame() {
             card represented a character fetched from an API.
           </div>
           <div className="info-box">
-            I used
-            <a href="https://rickandmortyapi.com/">
-              The Rick and Morty API
-            </a>{" "}
+            API used
+            <a className="api" href="https://rickandmortyapi.com/">
+              The Rick and Morty
+            </a>
             for fetching characters
           </div>
           <div className="front-end-project-desc">
             The game mechanics involved tracking which cards were clicked and
-            updating the score accordingly. Using React’s useState and
-            useEffect, I was able to keep track of game state in real-time,
-            ensuring that players couldn’t click on the same card twice.
+            updating the score accordingly. Using React’s{" "}
+            <span className="keywords">useState</span> and{" "}
+            <span className="keywords">useEffect</span>, I was able to keep
+            track of game state in real-time, ensuring that players couldn’t
+            click on the same card twice.
           </div>
           <img className="project-img" src={memoryGameHandleClick} alt="" />
           <div className="front-end-project-desc">
             When a card is clicked in the game, if the card has already been
-            selected (its ID is in the <span>selectedCards</span> array), the
-            player loses. In this case, the result is set to "You Lose," the
-            score is reset to zero, and the selected cards are cleared. However,
-            if the card is new and hasn't been clicked before, its ID is added
-            to the <span>selectedCards</span>, the score is incremented, and if
-            the new score exceeds the previous best score, the{" "}
-            <span>bestScore</span> is updated. If the player successfully clicks
-            all 10 unique cards without repeating any, the result is set to "You
-            Win". After every click, the characters are reshuffled by calling
-            the <span>shuffleCards</span> function.
+            selected (its ID is in the{" "}
+            <span className="keywords">selectedCards</span> array), the player
+            loses. In this case, the result is set to "You Lose," the score is
+            reset to zero, and the selected cards are cleared. However, if the
+            card is new and hasn't been clicked before, its ID is added to the{" "}
+            <span className="keywords">selectedCards</span>, the score is
+            incremented, and if the new score exceeds the previous best score,
+            the <span className="keywords">bestScore</span> is updated. If the
+            player successfully clicks all 10 unique cards without repeating
+            any, the result is set to "You Win". After every click, the
+            characters are reshuffled by calling the{" "}
+            <span className="keywords">shuffleCards</span> function.
           </div>
         </div>
         <div className="front-end-project-container">
           <div className="front-end-project-heading">The Challenge</div>
           <div className="front-end-project-desc">
-            One of the key challenges I faced was handling the card shuffling
-            logic. Initially, there were instances when all the displayed cards
-            had already been clicked once, making it impossible for the player
-            to continue without losing.
+            One of the key challenges I faced was handling the{" "}
+            <span className="keywords">card shuffling logic</span>. Initially,
+            there were instances when all the displayed cards had already been
+            clicked once, making it impossible for the player to continue
+            without losing.
           </div>
         </div>
 
@@ -93,14 +120,6 @@ function MemoryGame() {
             cards, guaranteeing at least one new card to click, thereby
             maintaining gameplay continuity.
           </div>
-        </div>
-        <div className="links">
-          <a
-            className="github"
-            href="https://github.com/yashvi03/memory-game?tab=readme-ov-file"
-          >
-            Github
-          </a>
         </div>
       </div>
       <Outlet />

@@ -1,5 +1,6 @@
 import uiux from "../../assets/uiux.svg";
 import { Link } from "react-router-dom";
+
 function UIUX() {
   return (
     <div className="ui-ux">

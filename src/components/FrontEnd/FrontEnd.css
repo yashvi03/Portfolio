@@ -12,9 +12,9 @@
 }
 
 .front-end-img {
-  width:30vw;
+  width:32vw;
   margin: 48px;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .front-end-heading {
@@ -54,7 +54,7 @@
 .view{
     padding: 12px;
     margin: 8px 0;
-    border-radius: 12px;
+    border-radius: 6px;
     border: none;
     color: white;
     background-color: rgb(244, 135, 40);
